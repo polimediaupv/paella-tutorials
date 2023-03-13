@@ -1,0 +1,17 @@
+{
+  "name": "paella7-demo-part1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "paella-core": "^1.21.2"
+  }
+}

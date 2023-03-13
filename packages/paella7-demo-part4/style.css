@@ -1,0 +1,105 @@
+body {
+    margin: 0px;
+}
+
+#player-container {
+    width: 100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    position: relative;
+}
+
+:root {
+    --main-bg-color: #1F2937;
+    --main-bg-color-hover: #1F2937;
+    --main-bg-gradient: #1F2937;
+    --secondary-bg-color-hover: #1F2937;
+
+    --highlight-bg-color: #3073B8;
+    --highlight-bg-color-hover: #3a8bdd;
+
+    --base-video-rect-background-color: #9CA3AF;
+}
+
+.player-container button:focus-visible {
+    outline-color: #DD3A8B
+}
+
+.playback-bar {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.progress-indicator-container {
+	forced-color-adjust: none;
+}
+
+.playback-bar .button-plugins .button-plugin-container div.non-interactive {
+    margin-top: -2px;
+}
+
+.video-container {
+    background-color: #9CA3AF;
+}
+
+.progress-indicator {
+    height: 25px;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+}
+
+.progress-indicator .progress-indicator-content {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 6px;
+}
+
+.progress-indicator .progress-indicator-remaining {
+    border-radius: 20px;
+    height: 6px;
+    background-color: #D1D5DB;
+}
+
+.progress-indicator .progress-indicator-handler {
+    background-color: white;
+    width: 16px;
+    height: 16px;
+}
+
+.video-canvas .button-area button {
+    background-color: var(--highlight-bg-color);
+    width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+.video-canvas .button-area button {
+    background-color: var(--highlight-bg-color-hover);
+}
+
+.video-canvas .button-area button svg path {
+    fill: #F9FAFB;
+}
+
+.playback-bar .button-plugins button i svg {
+    fill: #F9FAFB;
+}
+
+.playback-bar .button-plugins .button-plugin-container button {
+    border-radius: 7px;
+}
+
+.playback-bar .button-plugins {
+    height: calc(var(--button-fixed-height) - 1px);
+    padding: 4px;
+}
+
+.playback-bar .button-plugins.left-side {
+    margin-left: 5px;
+}
+
+.playback-bar .button-plugins.right-side {
+    margin-right: 5px;
+}
