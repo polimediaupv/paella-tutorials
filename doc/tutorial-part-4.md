@@ -17,7 +17,11 @@ For instance, the `fullscreen button plugin` define two icons:
 To change a icon you need to call to `paella.addCustomPluginIcon(pluginName, iconName, svgData)` function. Example:
 
 ```js
-await paella.addCustomPluginIcon("es.upv.paella.fullscreenButton", "fullscreenIcon", FullscreenIcon);
+import FullscreenIcon from "./icons/fullscreen-icon.svg?raw"
+
+await paella.addCustomPluginIcon("es.upv.paella.fullscreenButton",
+    "fullscreenIcon",
+    FullscreenIcon);
 ```
 
 So, we need to modify the `createPaellaPlayer.js` file and add this:
@@ -31,9 +35,12 @@ So, we need to modify the `createPaellaPlayer.js` file and add this:
 const paella = new Paella('player-container', initParams);
 
 + // change the icons
-+ await paella.addCustomPluginIcon("es.upv.paella.fullscreenButton", "fullscreenIcon", FullscreenIcon);
-+ await paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin", "backwardIcon", BackwardIcon);
-+ await paella.addCustomPluginIcon("es.upv.paella.forwardButtonPlugin", "forwardIcon", ForwardIcon);
++ await paella.addCustomPluginIcon("es.upv.paella.fullscreenButton",
++   "fullscreenIcon", FullscreenIcon);
++ await paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin",
++   "backwardIcon", BackwardIcon);
++ await paella.addCustomPluginIcon("es.upv.paella.forwardButtonPlugin",
++   "forwardIcon", ForwardIcon);
 
   paella.loadManifest()
     .then(() => console.log("done"))

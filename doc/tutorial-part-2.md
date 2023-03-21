@@ -43,11 +43,12 @@ We need to modify our `main.js` file:
 - `main.js` diff:
 
     ```diff
-      import './style.css'
       import { Paella } from 'paella-core';
     + import getBasicPluginsContext from 'paella-basic-plugins';
     + import getSlidePluginsContext from 'paella-slide-plugins';
-    + 
+    
+    import './style.css'
+    
     + const initParams = {
     +     customPluginContext: [
     +         getBasicPluginsContext(),
