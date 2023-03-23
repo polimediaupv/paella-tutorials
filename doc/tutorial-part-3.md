@@ -125,8 +125,7 @@ export function createPaellaPlayer(htmlElement, videoid, config, manifest) {
     ...
     async function customLoadVideoManifestFunction(videoManifestUrl,config,player) {
         player.log.debug("Using custom loadVideoManifest function");
-        const response = await fetch(videoManifestUrl);
-        return response.json();
+        return manifest
     }
 
     const initParams = {
