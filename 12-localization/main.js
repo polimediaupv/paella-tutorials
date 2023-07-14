@@ -62,8 +62,13 @@ const initParams = {
 const player = new Paella('player-container', initParams);
 
 await player.loadManifest();
+
+// If you add the dictionary outside initParams.loadDictionaries callback,
+// the translation strings will have more priority than the default plugin
+// translation strings:
 player.addDictionary("es", {
-    "Seek video to the next slide": "Tira palante"
+    "Seek video to the next slide": "Siguiente diapositiva",
+    "Seek video to the previous slide": "Diapositiva anterior",
 })
 
 
