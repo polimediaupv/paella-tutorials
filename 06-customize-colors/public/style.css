@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+:root {
+    --button-fixed-width-sm: 26px;
+    --button-fixed-height-sm: 26px;
+
+    --highlight-bg-color: #00b306;
+    --highlight-bg-color-hover: #629e64;
+    --main-bg-color: rgba(0, 0, 0, 0.1);
+    --main-bg-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,29 @@
+{
+    "metadata": {
+    },
+    "streams": [
+        {
+            "sources": {
+                "mp4": [
+                    {
+                        "src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presenter.mp4",
+                        "mimetype": "video/mp4"
+                    }
+                ]
+            },
+            "content": "presenter",
+            "role": "mainAudio"
+        },
+        {
+            "sources": {
+                "mp4": [
+                    {
+                        "src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presentation.mp4",
+                        "mimetype": "video/mp4"
+                    }
+                ]
+            },
+            "content": "presentation"
+        }
+    ]
+}
