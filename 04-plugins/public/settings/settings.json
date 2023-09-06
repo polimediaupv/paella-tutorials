@@ -57,11 +57,6 @@
             "enabled": true
         },
 
-        "es.upv.paella.playPauseButton": {
-            "enabled": true,
-            "order": 0
-        },
-
         "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",

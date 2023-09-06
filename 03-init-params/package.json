@@ -12,6 +12,6 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "paella-core": "^1.39.6"
+    "paella-core": "^1.42.0"
   }
 }

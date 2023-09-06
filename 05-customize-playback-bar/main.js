@@ -1,9 +1,12 @@
 import { 
     Paella, 
     defaultLoadConfigFunction,
-    utils
+    utils,
+    PlayPauseButtonPlugin
 } from 'paella-core';
-import getBasicPluginContext from 'paella-basic-plugins';
+import {
+    basicPlugins
+} from 'paella-basic-plugins';
 
 const initParams = {
     // Initialization parameters
@@ -24,8 +27,9 @@ const initParams = {
 
     defaultVideoPreview: "/settings/default_preview_landscape.jpg",
 
-    customPluginContext: [
-        getBasicPluginContext(),
+    plugins: [
+        PlayPauseButtonPlugin,
+        ...basicPlugins
     ]
 };
 const player = new Paella('player-container', initParams);

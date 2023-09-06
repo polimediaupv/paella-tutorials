@@ -12,7 +12,7 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "paella-basic-plugins": "^1.38.0",
-    "paella-core": "^1.39.10"
+    "paella-basic-plugins": "^1.41.0",
+    "paella-core": "^1.42.0"
   }
 }
