@@ -3,9 +3,8 @@ import {
     utils,
     PlayPauseButtonPlugin
 } from 'paella-core';
-import {
-    basicPlugins
-} from 'paella-basic-plugins';
+import { basicPlugins } from 'paella-basic-plugins';
+import { slidePlugins } from 'paella-slide-plugins';
 
 const initParams = {
     // Initialization parameters
@@ -15,7 +14,8 @@ const initParams = {
 
     plugins: [
         PlayPauseButtonPlugin,
-        ...basicPlugins
+        ...basicPlugins,
+        ...slidePlugins
     ]
 };
 const player = new Paella('player-container', initParams);

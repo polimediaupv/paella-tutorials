@@ -3,6 +3,19 @@
     "repositoryUrl": "repo",
     "manifestFileName": "data.json",
 
+    "buttonGroups": [
+        {
+            "enabled": true,
+            "groupName": "options",
+            "description": "Configuration options",
+            "icon": "settings-icon.svg",
+            "order": 4,
+            "side": "right",
+            "tabIndex": 10,
+            "parentContainer": "playbackBar"
+        }
+    ],
+
     "plugins": {
         "es.upv.paella.dualVideoDynamic": {
             "enabled": "true",
@@ -55,6 +68,7 @@
             "side": "right",
             "order": 2,
             "showIcons": true,
+            "parentContainer": "options",
             "description": "Select different layout 🎛️"
         },
 
@@ -62,6 +76,7 @@
             "enabled": true,
             "side": "right",
             "order": 3,
+            "parentContainer": "options",
             "description": "Toggle fullscreen player 📺"
         }
     }

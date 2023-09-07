@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "paella-basic-plugins": "^1.41.0",
-    "paella-core": "^1.42.0",
-    "paella-slide-plugins": "^1.41.0"
+    "paella-core": "^1.42.0"
   }
 }

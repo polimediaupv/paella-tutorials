@@ -1,7 +1,7 @@
 import { 
     Paella,
-    utils,
-    PlayPauseButtonPlugin
+    PlayPauseButtonPlugin,
+    utils
 } from 'paella-core';
 import { basicPlugins } from 'paella-basic-plugins';
 import { slidePlugins } from 'paella-slide-plugins';

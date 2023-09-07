@@ -12,8 +12,8 @@
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "paella-basic-plugins": "^1.38.0",
-    "paella-core": "^1.40.0",
-    "paella-slide-plugins": "^1.40.0"
+    "paella-basic-plugins": "^1.41.0",
+    "paella-core": "^1.42.0",
+    "paella-slide-plugins": "^1.41.0"
   }
 }

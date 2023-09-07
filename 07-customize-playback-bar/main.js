@@ -1,5 +1,5 @@
 import { 
-    Paella,
+    Paella, 
     utils,
     PlayPauseButtonPlugin
 } from 'paella-core';
@@ -12,7 +12,6 @@ const initParams = {
     configResourcesUrl: 'settings/',
     configUrl: 'settings/settings.json',
     defaultVideoPreview: "/settings/default_preview_landscape.jpg",
-
     plugins: [
         PlayPauseButtonPlugin,
         ...basicPlugins

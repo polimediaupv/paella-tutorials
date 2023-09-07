@@ -1,10 +1,10 @@
 import { 
-    Paella, 
-    defaultLoadConfigFunction,
-    utils
+    Paella,
+    utils,
+    PlayPauseButtonPlugin
 } from 'paella-core';
-import getBasicPluginContext from 'paella-basic-plugins';
-import getSlidePluginContext from 'paella-slide-plugins';
+import { basicPlugins } from 'paella-basic-plugins';
+import { slidePlugins } from 'paella-slide-plugins';
 
 const [
     volumeHigh,
@@ -23,24 +23,12 @@ const initParams = {
     // Initialization parameters
     configResourcesUrl: 'settings/',
     configUrl: 'settings/settings.json',
-
-    loadConfig: async (configUrl, player) => {
-        const config = await defaultLoadConfigFunction(configUrl, player);
-        utils.mergeObjects(config, {
-            plugins: {
-                "es.upv.paella.playPauseButton": {
-                    "enabled": true
-                }
-            }
-        })
-        return config;
-    },
-
     defaultVideoPreview: "/settings/default_preview_landscape.jpg",
 
-    customPluginContext: [
-        getBasicPluginContext(),
-        getSlidePluginContext()
+    plugins: [
+        PlayPauseButtonPlugin,
+        ...basicPlugins,
+        ...slidePlugins
     ]
 };
 const player = new Paella('player-container', initParams);
