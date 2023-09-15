@@ -1,0 +1,283 @@
+{
+    "defaultLanguage": "en",
+    "defaultLayout": "presenter-presentation",
+    "repositoryUrl": "repo",
+    "manifestFileName": "data.json",
+
+    "accessibility": {
+        "clickWithSpacebar": false
+    },
+
+    "progressIndicator": {
+        "showTotal": false,
+        "parentContainer": "progressIndicator",
+        "side": "left",
+        "showHandler": true,
+        "hideHandlerOnMouseOut": true,
+        "showRemainingProgress": true,
+        "inlineMode": false
+    },
+
+    "preferences": {
+        "sources": {
+            "dataPlugin": {
+                "context": "preferences"
+            }
+        },
+        "currentSource": "dataPlugin"
+    },
+
+    "videoContainer": {
+        "restorePlaybackRate": true,
+        "restoreVolume": true,
+        "restoreVideoLayout": {
+            "enabled": true,
+            "global": true
+        },
+        "restoreLastTime": {
+            "enabled": true,
+            "remainingSeconds": 5
+        }
+    },
+
+    "buttonGroups": [
+        {
+            "enabled": true,
+            "groupName": "options",
+            "description": "Configuration options",
+            "ariaLabel": "Configuration options",
+            "icon": "settings-icon.svg",
+            "order": 4,
+            "side": "right",
+            "tabIndex": 8,
+            "parentContainer": "playbackBar",
+            "menuTitle": "other_settings"
+        }
+    ],
+
+    "plugins": {
+        "es.upv.paella.dualVideoDynamic": {
+            "enabled": "true",
+            "validContent": [
+                { "id": "presenter-presentation", "content": ["presenter","presentation"], "icon": "presenter-presentation.svg", "title": "Presenter and presentation" }
+            ],
+            
+            "pipContentIds": [
+                "presenter-presentation-pip"
+            ],
+
+            "tabIndexStart": 20
+        },
+
+        "es.upv.paella.singleVideoDynamic": {
+            "enabled": "true",
+            "validContent": [
+                { "id": "presenter", "content": ["presenter"], "icon": "presenter.svg", "title": "Presenter" },
+                { "id": "presentation", "content": ["presentation"], "icon": "presentation.svg", "title": "Presentation" }
+            ],
+            "dualVideoContentIds": [
+                "presenter-presentation"
+            ],
+
+            "tabIndexStart": 20
+        },
+
+        "es.upv.paella.dualVideoPiP": {
+            "enabled": true,
+            "validContent": [
+                { "id": "presenter-presentation-pip", "content": ["presenter","presentation"], "icon": "pip.svg", "title": "PiP mode" }
+            ],
+            "dualVideoContentIds": [
+                "presenter-presentation"
+            ],
+
+            "tabIndexStart": 20
+        },
+
+        "es.upv.paella.mp4VideoFormat": {
+            "enabled": true,
+            "order": 2
+        },
+
+        "es.upv.paella.htmlVideoFormat": {
+            "enabled": true,
+            "order": 3
+        },
+
+        "es.upv.paella.imageVideoFormat": {
+            "enabled": true,
+            "order": 0
+        },
+
+        "es.upv.paella.hlsVideoFormat": {
+            "enabled": true,
+            "order": 1,
+            "audioTrackLabel": "name",
+            "enableCache": true,
+            "forceNative": false,
+            "hlsConfig": {
+            },
+            "corsConfig": {
+                "withCredentials": false,
+                "requestHeaders": {
+                    "Access-Control-Allow-Credentials": false
+                }
+            }
+        },
+
+        "es.upv.paella.videoCanvas": {
+            "enabled": true
+        },
+
+        "es.upv.paella.playPauseButton": {
+            "enabled": true,
+            "order": 0,
+            "ariaLabel": "Toggle play/pause",
+            "description": "Toggle play/pause",
+            "tabIndex": 0
+        },
+
+        "es.upv.paella.volumeButtonPlugin": {
+            "enabled": true,
+            "side": "left",
+            "order": 3,
+            "ariaLabel": "Set audio volume",
+            "description": "Set audio volume",
+            "tabIndex": 3
+        },
+
+        "es.upv.paella.layoutSelector": {
+            "enabled": true,
+            "side": "right",
+            "order": 2,
+            "showIcons": true,
+            "parentContainer": "playbackBar",
+            "description": "Select different layout 🎛️",
+            "ariaLabel": "Select different layout",
+            "minContainerSize": 600,
+            "tabIndex": 4
+        },
+
+        "es.upv.paella.fullscreenButton": {
+            "enabled": true,
+            "side": "right",
+            "order": 3,
+            "description": "Toggle fullscreen player 📺",
+            "ariaLabel": "Toggle fullscreen player",
+            "tabIndex": 7
+        },
+
+        "es.upv.paella.frameControlButtonPlugin": {
+            "enabled": true,
+            "side": "right",
+            "order": 2,
+            "targetContent": "presentation",
+            "description": "Navigate video using frame thumbnails",
+            "ariaLabel": "Navigate video using frame thumbnails",
+            "tabIndex": 5
+        },
+
+        "es.upv.paella.slideMapProgressBarPlugin": {
+            "enabled": true,
+            "markColor": {
+                "mouseOut": "#0A0A0A",
+                "mouseHover": "#A9A9A9"
+            },
+            "markWidth": 3,
+            "drawBackground": false
+        },
+
+        "es.upv.paella.nextSlideNavigatorButton": {
+            "enabled": true,
+            "content": [
+                "presentation",
+                "presenter"
+            ],
+            "side": "right",
+            "order": 0
+        },
+
+        "es.upv.paella.prevSlideNavigatorButton": {
+            "enabled": true,
+            "content": [
+                "presentation",
+                "presenter"
+            ],
+            "side": "right",
+            "order": 1
+        },
+
+        "es.upv.paella.qualitySelector": {
+            "enabled": true,
+            "side": "right",
+            "order": "2",
+            "showIcon": false,
+            "menuTitle": "Video Quality",
+            "parentContainer": "options"
+        },
+
+        "es.upv.paella.vttManifestCaptionsPlugin": {
+            "enabled": true
+        },
+
+        "es.upv.paella.dfxpManifestCaptionsPlugin": {
+            "enabled": true
+        },
+
+        "es.upv.paella.captionsSelectorPlugin": {
+            "enabled": true,
+            "side": "right",
+            "parentContainer": "options",
+            "description": "Select captions",
+            "ariaLabel": "Select captions"
+        },
+
+        "es.upv.paella.forwardButtonPlugin": {
+            "enabled": true,
+            "side": "left",
+            "order": 2,
+            "time": 10,
+            "suffix": true,
+            "description": "Seek forwards 10 seconds",
+            "ariaLabel": "Seek forwards 10 seconds",
+            "tabIndex": 2
+        },
+
+        "es.upv.paella.backwardButtonPlugin": {
+            "enabled": true,
+            "side": "left",
+            "order": 1,
+            "time": 10,
+            "suffix": true,
+            "description": "Seek backwards 10 seconds",
+            "ariaLabel": "Seek backwards 10 seconds",
+            "tabIndex": 1
+        },
+
+        "es.upv.paella.playbackRateButton": {
+            "enabled": true,
+            "side": "right",
+            "rates": [0.75, 1, 1.5, 2],
+            "menuTitle": "Playback Rate",
+            "showIcon": false,
+            "description": "Set video playback rate",
+            "ariaLabel": "Set video playback rate",
+            "tabIndex": 3
+        },
+
+        "es.upv.paella.defaultShortcuts": {
+            "enabled": true,
+            "validPlaybackRates": [0.75, 1, 1.5, 2],
+            "skipBackwards": 10,
+            "skipForward": 10
+        },
+
+        "es.upv.paella.cookieDataPlugin": {
+            "enabled": true,
+            "context": [
+                "default",
+                "preferences"
+            ]
+        }
+    }
+}
