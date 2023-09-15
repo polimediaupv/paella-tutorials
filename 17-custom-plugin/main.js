@@ -5,6 +5,11 @@ import {
 } from 'paella-core';
 import { basicPlugins } from 'paella-basic-plugins';
 import { slidePlugins } from 'paella-slide-plugins';
+import { 
+    ZoomCanvasPlugin,
+    CanvasZoomInButtonPlugin,
+    CanvasZoomOutButtonPlugin
+ } from 'paella-zoom-plugin';
 
 import TestButtonPlugin from './TestButtonPlugin';
 
@@ -31,7 +36,10 @@ const initParams = {
         PlayPauseButtonPlugin,
         ...basicPlugins,
         ...slidePlugins,
-        TestButtonPlugin
+        TestButtonPlugin,
+        ZoomCanvasPlugin,
+        CanvasZoomInButtonPlugin,
+        CanvasZoomOutButtonPlugin
     ],
 
     loadDictionaries: player => {

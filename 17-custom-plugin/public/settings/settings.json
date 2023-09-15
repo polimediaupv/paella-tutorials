@@ -126,6 +126,10 @@
         },
 
         "es.upv.paella.videoCanvas": {
+            "enabled": false
+        },
+
+        "es.upv.paella.zoomPlugin": {
             "enabled": true
         },
 
@@ -278,6 +282,18 @@
                 "default",
                 "preferences"
             ]
+        },
+        "es.upv.paella.canvasZoomOutButtonPlugin": {
+            "enabled": true,
+            "side": "center",
+            "content": ["presenter"],
+            "order": 0
+        },
+        "es.upv.paella.canvasZoomInButtonPlugin": {
+            "enabled": true,
+            "side": "center",
+            "content": ["presenter"],
+            "order": 1
         }
     }
 }
