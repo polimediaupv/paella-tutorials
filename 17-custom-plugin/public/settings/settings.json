@@ -126,11 +126,13 @@
         },
 
         "es.upv.paella.videoCanvas": {
-            "enabled": false
+            "enabled": true,
+            "order": 1
         },
 
         "es.upv.paella.zoomPlugin": {
-            "enabled": true
+            "enabled": true,
+            "order": 0
         },
 
         "es.upv.paella.playPauseButton": {
