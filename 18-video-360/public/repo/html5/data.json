@@ -1,0 +1,45 @@
+{
+	"metadata": {
+	},
+	"streams": [
+		{
+			"sources": {
+				"html": [
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presentation.mp4",
+						"mimetype": "video/mp4"
+					},
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presentation.ogv",
+						"mimetype": "video/ogg"
+					},
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presentation.webm",
+						"mimetype": "video/webm"
+					}
+				]
+			},
+			"content":"presentation"
+		},
+		{
+			"sources": {
+				"html": [
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presenter.mp4",
+						"mimetype": "video/mp4"
+					},
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presenter.ogv",
+						"mimetype": "video/ogg"
+					},
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/720-presenter.webm",
+						"mimetype": "video/webm"
+					}
+				]
+			},
+			"role": "mainAudio",
+            "content": "presenter"
+		}
+	]
+}
