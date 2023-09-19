@@ -1,0 +1,16 @@
+{
+	"streams": [
+		{
+			"sources": {
+				"mp4": [
+					{
+						"src": "https://repository.paellaplayer.upv.es/video360/video360.mp4",
+						"mimetype": "video/mp4"
+					}
+				]
+			},
+			"content": "presenter",
+			"canvas": [ "video360", "video" ]
+		}
+	]
+}
