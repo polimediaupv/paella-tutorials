@@ -1,0 +1,28 @@
+{
+	"streams": [
+		{
+			"sources": {
+				"mp4": [
+					{
+						"src": "https://repository.paellaplayer.upv.es/pm-be0c7738-039d-9445-8237-8b85f37cd303/video/720p.mp4",
+						"mimetype": "video/mp4",
+						"res": {
+							"w": "1280",
+							"h": "720"
+						}
+					}
+				]
+			},
+			"preview": "https://repository.paellaplayer.upv.es/pm-be0c7738-039d-9445-8237-8b85f37cd303/slides/thumb_0.jpg",
+			"content":"presenter"
+		}
+	],
+	"captions": [
+		{
+			"lang": "captions",
+			"text": "Captions",
+			"format": "dfxp",
+			"url": "captions.dfxp"
+		}
+	]
+}
