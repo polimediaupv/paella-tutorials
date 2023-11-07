@@ -13,32 +13,6 @@ body {
     --main-bg-color: rgba(0, 0, 0, 0.6);
 }
 
-/*
-.playback-bar .button-plugins button i svg {
-    color: black;
-    fill: black;
-    background-color: white;
-    padding: 1px;
-    border-radius: 1px;
-}
-
-.button-group button i svg {
-    color: black;
-    fill: black;
-    background-color: white;
-    padding: 1px;
-    border-radius: 1px;
-}
-
-.video-canvas .button-area button i svg {
-    color: black;
-    fill: black;
-    background-color: white;
-    padding: 1px;
-    border-radius: 1px;
-}
-*/
-
 #player-container {
     width: 100vw;
     height: 100vh;
