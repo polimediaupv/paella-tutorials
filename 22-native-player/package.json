@@ -1,0 +1,21 @@
+{
+  "name": "paella-tutorial",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.3.9"
+  },
+  "dependencies": {
+    "paella-basic-plugins": "^1.44.0",
+    "paella-core": "^1.46.0",
+    "paella-slide-plugins": "^1.41.1",
+    "paella-webgl-plugins": "^1.41.0",
+    "paella-zoom-plugin": "^1.41.1"
+  }
+}
