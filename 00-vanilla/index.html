@@ -24,7 +24,7 @@
     <script type="module">
       import { Paella } from './node_modules/@asicupv/paella-core/dist/paella-core.js';
 
-      const player = new Paella('playerContainer');
+      const player = new Paella(document.getElementById('playerContainer'));
 
       const videoUrl = "https://repository.paellaplayer.upv.es/belmar-multiresolution/media/480-presenter.mp4";
       const preview = "https://repository.paellaplayer.upv.es/belmar-multiresolution/preview/belmar-preview.jpg";

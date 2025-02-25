@@ -8,7 +8,7 @@
             ]
         },
 
-        "es.upv.paella.mp4VideoFormat": {
+        "es.upv.paella.htmlVideoFormat": {
             "enabled": true
         },
 
@@ -18,6 +18,12 @@
 
         "es.upv.paella.playPauseButton": {
             "enabled": true
+        },
+
+        "es.upv.paella.currentTimeLabel": {
+            "enabled": true,
+            "side": "left",
+            "showTotalTime": true
         }
     }
 }
