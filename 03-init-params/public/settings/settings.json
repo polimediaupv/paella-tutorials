@@ -37,7 +37,7 @@
             ]
         },
 
-        "es.upv.paella.mp4VideoFormat": {
+        "es.upv.paella.htmlVideoFormat": {
             "enabled": true
         },
 

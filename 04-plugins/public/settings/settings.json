@@ -44,6 +44,12 @@
             "enabled": true
         },
 
+        "es.upv.paella.currentTimeLabel": {
+            "enabled": true,
+            "side": "left",
+            "showTotalTime": true
+        },
+
         "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",
