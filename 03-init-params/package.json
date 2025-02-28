@@ -9,9 +9,9 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.3.9"
+    "vite": "^6.2.0"
   },
   "dependencies": {
-    "paella-core": "^1.42.0"
+    "@asicupv/paella-core":  "^2.0.6"
   }
 }

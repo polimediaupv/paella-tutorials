@@ -1,5 +1,6 @@
 {
     "defaultLayout": "presenter-presentation",
+
     "repositoryUrl": "repo",
     "manifestFileName": "data.json",
 
@@ -44,8 +45,14 @@
             "enabled": true
         },
 
-        "es.upv.paella.playPauseButton": {
-            "enabled": false
+        "__es.upv.paella.playPauseButton": {
+            "enabled": true
+        },
+
+        "es.upv.paella.currentTimeLabel": {
+            "enabled": true,
+            "side": "left",
+            "showTotalTime": true
         }
     }
 }
