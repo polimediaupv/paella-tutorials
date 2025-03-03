@@ -1,10 +1,12 @@
 import { 
-    Paella, 
-    PlayPauseButtonPlugin
-} from 'paella-core';
+    Paella
+} from '@asicupv/paella-core';
 import {
     basicPlugins
-} from 'paella-basic-plugins';
+} from '@asicupv/paella-basic-plugins';
+
+import '@asicupv/paella-core/paella-core.css';
+import '@asicupv/paella-basic-plugins/paella-basic-plugins.css';
 
 const initParams = {
     // Initialization parameters
@@ -13,10 +15,9 @@ const initParams = {
     defaultVideoPreview: "/settings/default_preview_landscape.jpg",
 
     plugins: [
-        PlayPauseButtonPlugin,
         ...basicPlugins
     ]
 };
-const player = new Paella('player-container', initParams);
+const player = new Paella('playerContainer', initParams);
 
 await player.loadManifest();

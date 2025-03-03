@@ -57,10 +57,23 @@
             "enabled": true
         },
 
+        "es.upv.paella.playPauseButton": {
+            "enabled": true,
+            "side": "left",
+            "order": 0
+        },
+
         "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",
             "order": 1
+        },
+
+        "es.upv.paella.currentTimeLabel": {
+            "enabled": true,
+            "side": "left",
+            "showTotalTime": true,
+            "order": 2
         },
 
         "es.upv.paella.layoutSelector": {
@@ -68,16 +81,16 @@
             "side": "right",
             "order": 2,
             "showIcons": true,
-            "parentContainer": "options",
-            "description": "Select different layout 🎛️"
+            "description": "Select different layout 🎛️",
+            "parentContainer": "options"
         },
 
         "es.upv.paella.fullscreenButton": {
             "enabled": true,
             "side": "right",
             "order": 3,
-            "parentContainer": "options",
-            "description": "Toggle fullscreen player 📺"
+            "description": "Toggle fullscreen player 📺",
+            "parentContainer": "options"
         }
     }
 }
