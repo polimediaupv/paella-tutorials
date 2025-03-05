@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+:root {
+    --button-fixed-width-sm: 26px;
+    --button-fixed-height-sm: 26px;
+
+    --highlight-bg-color: #61b2f9;
+    --highlight-bg-color-hover: #97c9f5;
+    --main-fg-color: rgb(54, 54, 54);
+    --main-bg-color: rgba(170, 170, 170, 0.923);
+    --main-bg-color: rgba(248, 248, 248, 0.78);
+    --secondary-bg-color: rgb(241, 241, 241);
+    --secodnary-bg-color-highlight: white;
+
+}
+
+.playback-bar {
+    --toolbar-gradient: linear-gradient(0deg, rgb(255 255 255 / 70%) 0%, rgb(255 255 255 / 50%) 60%, rgb(255 255 255 / 0%) 100%);
+    --toolbar-gradient-hover: linear-gradient(0deg, rgb(255 255 255 / 80%) 0%, rgb(255 255 255 / 80%) 0%);
+    --toolbar-buttons-padding: 15px 15px;
+}
+
+.progress-indicator {
+    --progress-indicator-padding: 6px 15px;
+    --progress-indicator-slide-marker-height: 30px;
+    --handler-opacity: 0;
+    --handler-color-hover: #f0f0f0;
+    --handler-color-active: #f0f0f0;
+}
