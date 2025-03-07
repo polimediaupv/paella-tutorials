@@ -11,6 +11,6 @@
   "devDependencies": {
   },
   "dependencies": {
-    "@asicupv/paella-core": "^2.0.5"
+    "@asicupv/paella-core": "^2.0.18"
   }
 }

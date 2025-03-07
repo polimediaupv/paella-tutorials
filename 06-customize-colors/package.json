@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^6.2.0"
+    "vite": "^6.2.1"
   },
   "dependencies": {
-    "@asicupv/paella-basic-plugins": "^2.0.0",
-    "@asicupv/paella-core": "^2.0.11"
+    "@asicupv/paella-basic-plugins": "^2.0.1",
+    "@asicupv/paella-core": "^2.0.18"
   }
 }
