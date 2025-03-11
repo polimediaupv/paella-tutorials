@@ -3,16 +3,6 @@
     "repositoryUrl": "repo",
     "manifestFileName": "data.json",
 
-    "progressIndicator": {
-        "showTotal": false,
-        "parentContainer": "progressIndicator",
-        "side": "left",
-        "showHandler": true,
-        "hideHandlerOnMouseOut": true,
-        "showRemainingProgress": true,
-        "inlineMode": false
-    },
-
     "buttonGroups": [
         {
             "enabled": true,
@@ -69,6 +59,7 @@
 
         "es.upv.paella.playPauseButton": {
             "enabled": true,
+            "side": "left",
             "order": 0
         },
 
@@ -78,22 +69,52 @@
             "order": 1
         },
 
+        "es.upv.paella.currentTimeLabel": {
+            "enabled": true,
+            "side": "left",
+            "showTotalTime": true,
+            "order": 2
+        },
+
         "es.upv.paella.layoutSelector": {
             "enabled": true,
             "side": "right",
             "order": 2,
             "showIcons": true,
-            "parentContainer": "playbackBar",
             "description": "Select different layout 🎛️",
-            "minContainerSize": 600
+            "parentContainer": "options"
         },
 
         "es.upv.paella.fullscreenButton": {
             "enabled": true,
             "side": "right",
             "order": 3,
-            "parentContainer": "options",
-            "description": "Toggle fullscreen player 📺"
+            "description": "Toggle fullscreen player 📺",
+            "parentContainer": "options"
+        },
+
+        "es.upv.paella.frameControlButtonPlugin": {
+            "enabled": true,
+            "side": "right",
+            "order": 4
+        },
+
+        "es.upv.paella.nextSlideNavigatorButton": {
+            "enabled": true,
+            "content": [
+                "presentation"
+            ],
+            "side": "left",
+            "order": 0
+        },
+
+        "es.upv.paella.prevSlideNavigatorButton": {
+            "enabled": true,
+            "content": [
+                "presentation"
+            ],
+            "side": "left",
+            "order": 1
         }
     }
 }
