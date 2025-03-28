@@ -4,9 +4,6 @@ body {
 }
 
 :root {
-    --button-fixed-width-sm: 26px;
-    --button-fixed-height-sm: 26px;
-
     --highlight-bg-color: #61b2f9;
     --highlight-bg-color-hover: #97c9f5;
     --main-fg-color: rgb(54, 54, 54);
@@ -23,17 +20,14 @@ body {
 
     --popup-wrapper-padding: 15px 15px;
 
-}
 
-.playback-bar {
     --playback-bar-gradient: linear-gradient(0deg, rgb(255 255 255 / 80%) 0%, rgb(255 255 255 / 80%) 0%);
     --playback-bar-gradient-hover: linear-gradient(0deg, rgb(255 255 255 / 80%) 0%, rgb(255 255 255 / 80%) 0%);
-    --playback-bar-buttons-padding: 15px 15px;
-}
+    --playback-bar-buttons-padding: 5px 15px 15px 15px;
 
-.progress-indicator {
-    --progress-indicator-padding: 6px 15px;
-    --progress-indicator-slide-marker-height: 30px;
+
+    --progress-indicator-padding: 6px 15px 2px 15px;
+    --progress-indicator-slide-marker-height: 13px;
     --handler-opacity: 0;
     --handler-color-hover: #f0f0f0;
     --handler-color-active: #f0f0f0;
@@ -41,4 +35,10 @@ body {
     --timeline-preview-gap: 25px;
     --timeline-preview-border-radius: 20px;
     --timeline-preview-padding: 15px;
+}
+
+.playback-bar ul>li>button[name="es.upv.paella.playPauseButton"] {
+    color: var(--highlight-bg-color);
+    fill: var(--highlight-bg-color);
+    background-color: var(--main-fg-color);
 }
