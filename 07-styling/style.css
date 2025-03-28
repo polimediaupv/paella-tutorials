@@ -39,6 +39,18 @@ body {
 
 .playback-bar ul>li>button[name="es.upv.paella.playPauseButton"] {
     color: var(--highlight-bg-color);
-    fill: var(--highlight-bg-color);
     background-color: var(--main-fg-color);
+
+    & svg {
+        fill: white;
+        stroke: white;
+    }
+}
+
+.playback-bar ul>li>button[name="es.upv.paella.playPauseButton"]:hover {
+    background-color: var(--highlight-bg-color);
+}
+
+.playback-bar ul>li>button[name="es.upv.paella.playPauseButton"]:active {
+    background-color: var(--highlight-bg-color-hover);
 }
