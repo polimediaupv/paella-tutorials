@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@asicupv/paella-basic-plugins": "^2.0.4",
-    "@asicupv/paella-core": "^2.1.2",
+    "@asicupv/paella-core": "^2.1.3",
     "@asicupv/paella-slide-plugins": "^2.0.2"
   }
 }
