@@ -11,8 +11,6 @@ import {
 import "@asicupv/paella-core/paella-core.css";
 import "@asicupv/paella-basic-plugins/paella-basic-plugins.css";
 import "@asicupv/paella-slide-plugins/paella-slide-plugins.css";
-// import "./style.css";
-//import "./public/skins/skin_1.css";
 
 const initParams = {
     // Initialization parameters
@@ -27,8 +25,13 @@ const initParams = {
 };
 const player = new Paella('playerContainer', initParams);
 
-player.skin.loadSkin("skins/skin_1.json");
-
 await player.loadManifest();
 
+player.bindEvent(player.Events.PLAYER_LOADED, () => {
+        setTimeout(async () => {
+            await player.skin.loadSkin("skins/my-skin/skin.json");
+        }, 2000);
+    },
+    true
+);
 

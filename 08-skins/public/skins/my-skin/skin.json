@@ -1,6 +1,9 @@
 {
+    "name": "My Skin",
+    "description": "My custom skin for Paella Player",
+    "author": "Fernando Serrano Carpena",
     "styleSheets": [
-        "skin_1.css"
+        "style.css"
     ],
     "icons": [
         {
