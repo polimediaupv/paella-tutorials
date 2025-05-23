@@ -1,96 +1,12 @@
 {
-    "fallbackId": "belmar-multiresolution-remote",
     "repositoryUrl": "repository",
     "manifestFileName": "data.json",
     "defaultLayout": "presenter-presentation",
     "defaultLanguage": "en",
     "defaultAudioStream": "presenter",
-    "defaultVideoPreview": "/config/default_preview_landscape.jpg",
-    "defaultVideoPreviewPortrait": "/config/default_preview_portrait.jpg",
+    
     "logLevel": "INFO",
-    "ui": {
-        "hideUITimer": 2000,
-        "hideOnMouseLeave": true
-    },
-    "accessibility": {
-        "clickWithSpacebar": false
-    },
-    "progressIndicator": {
-        "showTotal": true,
-        "parentContainer": "progressIndicator",
-        "side": "left",
-        "visible": true,
-        "showHandler": true,
-        "hideHandlerOnMouseOut": true,
-        "showRemainingProgress": true,
-        "inlineMode": false
-    },
-    "preferences": {
-        "currentSource": "dataPlugin",
-        "sources": {
-            "cookie": {
-                "consentType": "necessary"
-            },
-            "dataPlugin": {
-                "context": "preferences"
-            }
-        }
-    },
-    "videoContainer": {
-        "overPlaybackBar": false,
-        "restorePlaybackRate": true,
-        "restoreVolume": true,
-        "restoreVideoLayout": {
-            "enabled": true,
-            "global": true
-        },
-        "restoreLastTime": {
-            "enabled": true,
-            "remainingSeconds": 5
-        },
-        "dynamicLayout": {
-            "landscapeVerticalAlignment": "align-bottom",
-            "portraitHorizontalAlignment": "align-center"
-        }
-    },
-    "buttonGroups": [
-        {
-            "enabled": true,
-            "groupName": "options",
-            "description": "Configuration options",
-            "icon": "settings-icon.svg",
-            "order": 4,
-            "side": "right",
-            "parentContainer": "playbackBar",
-            "menuTitle": "Options"
-        }
-    ],
-    "cookieConsent": [
-        {
-            "type": "necessary",
-            "title": "Necessary",
-            "description": "Cookies required for proper operation.",
-            "required": true
-        },
-        {
-            "type": "preferences",
-            "title": "Preferences",
-            "description": "Cookies used to store user preferences that can be configured in the application. If disabled, some of these features may not work properly.",
-            "required": false
-        },
-        {
-            "type": "analytical",
-            "title": "Analytical",
-            "description": "Cookies used to analyze user behavior and thus provide clues about future improvements in the application.",
-            "required": false
-        },
-        {
-            "type": "marketing",
-            "title": "Marketing",
-            "description": "Cookies used to better tailor ads to user preferences.",
-            "required": false
-        }
-    ],
+
     "plugins": {
         "es.upv.paella.singleVideo": {
             "enabled": false,
@@ -315,32 +231,6 @@
             "enabled": true,
             "order": 2
         },
-        "es.upv.paella.hlsVideoFormat": {
-            "enabled": true,
-            "order": 0,
-            "audioTrackLabel": "name",
-            "enableCache": true,
-            "forceNative": false,
-            "hlsConfig": {},
-            "corsConfig": {
-                "withCredentials": false,
-                "requestHeaders": {
-                    "Access-Control-Allow-Credentials": false
-                }
-            }
-        },
-        "es.upv.paella.hlsLiveVideoFormat": {
-            "enabled": true,
-            "order": 0,
-            "enableCache": true,
-            "hlsConfig": {},
-            "corsConfig": {
-                "withCredentials": false,
-                "requestHeaders": {
-                    "Access-Control-Allow-Credentials": false
-                }
-            }
-        },
         "es.upv.paella.audioVideoFormat": {
             "enabled": true
         },
@@ -348,10 +238,7 @@
             "enabled": true,
             "order": 1,
             "container": "playbackBar",
-            "side": "left",
-            "description": "Play/pause",
-            "ariaLabel": "Play/pause",
-            "id": "playPauseButton"
+            "side": "left"
         },
         "es.upv.paella.videoCanvas": {
             "enabled": true,
@@ -361,15 +248,6 @@
             "enabled": true,
             "order": 1
         },
-        "es.upv.paella.cookieDataPlugin": {
-            "enabled": false,
-            "order": 0,
-            "context": [
-                "default",
-                "trimming",
-                "preferences"
-            ]
-        },
         "es.upv.paella.localStorageDataPlugin": {
             "enabled": true,
             "order": 0,
@@ -378,16 +256,6 @@
                 "trimming",
                 "preferences"
             ]
-        },
-        "es.upv.paella.vttManifestCaptionsPlugin": {
-            "enabled": true
-        },
-        "es.upv.paella.dfxpManifestCaptionsPlugin": {
-            "enabled": true
-        },
-        "es.upv.paella.qualitySelector": {
-            "enabled": true,
-            "side": "right"
         },
         "es.upv.paella.currentTimeLabel": {
             "enabled": true,
@@ -410,34 +278,6 @@
             "side": "left",
             "order": 4
         },
-        "es.upv.paella.playbackRateButton": {
-            "enabled": true,
-            "side": "left",
-            "order": 3,
-            "parentContainer": "optionsContainer",
-            "rates": [
-                0.75,
-                1,
-                1.5,
-                2
-            ],
-            "menuTitle": "Playback Rate",
-            "showIcon": false,
-            "popUpType": "no-modal"
-        },
-        "es.upv.paella.captionsSelectorPlugin": {
-            "enabled": true,
-            "side": "right"
-        },
-        "es.upv.paella.hlsCaptionsSelectorPlugin": {
-            "enabled": true,
-            "side": "right"
-        },
-        "es.upv.paella.audioSelector": {
-            "enabled": true,
-            "side": "right",
-            "popUpType": "no-modal"
-        },
         "es.upv.paella.layoutSelector": {
             "enabled": true,
             "side": "right",
@@ -445,104 +285,10 @@
             "parentContainer": "playbackBar",
             "menuTitle": "Layout"
         },
-        "es.upv.paella.frameControlButtonPlugin": {
-            "enabled": true,
-            "side": "right",
-            "order": 102
-        },
         "es.upv.paella.fullscreenButton": {
             "enabled": true,
             "side": "right",
             "order": 103
-        },
-        "es.upv.paella.video360Canvas": {
-            "enabled": true,
-            "order": 1,
-            "maxZoom": 2,
-            "minZoom": 0.5,
-            "speedX": 0.4,
-            "speedY": 0.4
-        },
-        "es.upv.paella.hlsCaptionsPlugin": {
-            "enabled": true
-        },
-        "es.upv.paella.defaultShortcuts": {
-            "enabled": true,
-            "validPlaybackRates": [
-                0.75,
-                1,
-                1.5,
-                2
-            ]
-        },
-        "es.upv.paella.arrowSlidesNavigator": {
-            "enabled": false,
-            "target": [
-                "presentation",
-                "presenter"
-            ]
-        },
-        "es.upv.paella.userEventTracker": {
-            "enabled": true,
-            "context": "userTracking"
-        },
-        "es.upv.paella.debug.userTrackingDataPlugin": {
-            "enabled": false,
-            "context": [
-                "userTracking"
-            ]
-        },
-        "es.upv.paella.analytics.userTrackingDataPlugin": {
-            "enabled": false,
-            "trackingId": "configure_your_tracking_id_here",
-            "domain": "",
-            "category": true,
-            "context": [
-                "userTracking"
-            ]
-        },
-        "es.upv.paella.findCaptionsPlugin": {
-            "enabled": true,
-            "side": "right",
-            "description": "Search in captions",
-            "parentContainer": "options",
-            "resizeable": true,
-            "closeActions": {
-                "closeButton": true,
-                "clickOutside": false
-            }
-        },
-        "es.upv.paella.slideMapProgressBarPlugin": {
-            "enabled": true,
-            "markColor": {
-                "mouseOut": "#0A0A0A",
-                "mouseHover": "#A9A9A9"
-            },
-            "markStyle": "dot",
-            "markWidth": 2,
-            "drawBackground": false,
-            "drawFirstMark": false
-        },
-        "es.upv.paella.customTimeProgressIndicator": {
-            "enabled": false,
-            "textSize": "large",
-            "showTotal": false
-        },
-        "es.upv.paella.nextSlideNavigatorButton": {
-            "enabled": true,
-            "content": [
-                "presentation"
-            ],
-            "side": "left",
-            "order": 1
-        },
-        "es.upv.paella.prevSlideNavigatorButton": {
-            "enabled": true,
-            "content": [
-                "presentation"
-            ],
-            "side": "left",
-            "order": 0
         }
     }
 }

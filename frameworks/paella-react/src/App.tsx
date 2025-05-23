@@ -1,5 +1,3 @@
-import './App.css'
-
 import Player from "./Player"
 
 function App() {
@@ -7,7 +5,7 @@ function App() {
   return (
     <>
       <Player />
-      <p className="read-the-docs">
+      <p>
         Paella Player React component example
       </p>
     </>
